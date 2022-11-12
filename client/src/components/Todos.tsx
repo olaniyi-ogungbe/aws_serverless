@@ -50,7 +50,7 @@ export class Todos extends React.PureComponent<TodosProps, TodosState> {
       const newTodo = await createTodo(this.props.auth.getIdToken(), {
         name: this.state.newTodoName,
         dueDate
-      })
+      }) 
       this.setState({
         todos: [...this.state.todos, newTodo],
         newTodoName: ''
